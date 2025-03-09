@@ -1,10 +1,3 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-import datetime as dt
-from datetime import datetime, timedelta
-import PandaPlyr
-import duckdb
 
 # import siuba
 # from siuba import _, group_by, summarize
@@ -33,8 +26,8 @@ st.title("Cancellation Tracker")
 
 
 # File uploader
-# uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
-uploaded_file = "/Users/johntaveras/Downloads/cancel_dash_data.csv"
+uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+# uploaded_file = "/Users/johntaveras/Downloads/cancel_dash_data.csv"
 df = pd.read_csv(uploaded_file)
 
 
